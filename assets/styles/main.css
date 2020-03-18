@@ -6,6 +6,38 @@
   padding: 0;
 }
 
+/* Utilities */
+
+.u--flex {
+  display: flex;
+}
+
+.u--column {
+  flex-direction: column;
+}
+
+.u--sp-around {
+  justify-content: space-around;
+}
+
+.u--sp-between {
+  justify-content: space-between;
+}
+
+.u--jus-center {
+  justify-content: center;
+}
+
+.u--it-center {
+  align-items: center;
+}
+
+.u--relative {
+  position: relative;
+}
+
+/* Typography*/
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
@@ -27,23 +59,12 @@ a:hover {
 .app {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Sidebar */
 
 .app__library {
-  display: flex;
   flex-grow: 1;
-}
-
-/* Playlist */
-
-.app__library__sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Playlist */
@@ -51,9 +72,6 @@ a:hover {
 .app__library__sidebar__playlist {
   background: #111;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-
 }
 
 .app__library__sidebar__playlist a {
@@ -62,8 +80,7 @@ a:hover {
   margin: 5px 10px;
 }
 
-.app__library__sidebar__playlist a,
-.app__library__sidebar__account a {
+.app__library__sidebar a{
   display: block;
   width: 30px;
   margin: 10px 15px;
@@ -85,9 +102,7 @@ a:hover {
   height: 90px; /* DEBUG: */
 }
 
-.profile {
-  width: 40px;
-  height: 40px;
+.app__library__sidebar__account__img--circle {
   background-color: #555;
   border-radius: 50%;
 }
@@ -96,16 +111,12 @@ a:hover {
 
 .app__library__contents {
   background: #333;
-  position: relative;
   flex-grow: 1;
   padding-top: 90px; /* same as app__library__contents__topbar height */
-  display: flex;
   overflow-y: auto;
-
 }
 
 .app__library__contents ul {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -135,7 +146,6 @@ a:hover {
   left: 0;
   width: 100%;
   background-image: linear-gradient(rgba(22, 255, 0, .5),rgba(22, 255, 0, .2));
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -151,6 +161,30 @@ a:hover {
 
 .app__library__contents__topbar a:hover {
   border-color: #555;
+}
+
+/* Albums section */
+
+.app__library__contents__albums {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+.app__library__contents__albums__item {
+}
+
+.app__library__contents__albums__item a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.app__library__contents__albums h2 {
+  width: 100%;
 }
 
 /* Player */

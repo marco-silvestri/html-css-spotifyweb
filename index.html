@@ -13,13 +13,13 @@
   </head>
   <body>
     <!-- MAIN WRAPPER -->
-    <div class="app">
+    <div class="app u--flex u--column">
       <!-- Side + Center wrapper -->
-      <div class="app__library">
+      <div class="app__library u--flex">
         <!-- Sidebar  -->
-        <aside class="app__library__sidebar">
+        <aside class="app__library__sidebar u--flex u--column u--sp-between">
           <!-- Playlist -->
-          <div class="app__library__sidebar__playlist">
+          <div class="app__library__sidebar__playlist u--flex u--column">
             <a href="#"><img src="assets/img/logo-small.svg" alt=""></a>
             <a href="#"><img src="assets/img/home.svg" alt=""></a>
             <a href="#"><img src="assets/img/search.svg" alt=""></a>
@@ -27,16 +27,16 @@
           </div>
           <!-- Account panel -->
           <div class="app__library__sidebar__account">
-            <a href="#"><div class="profile"><img src="assets/img/profile.svg" alt=""></div></a>
+            <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
           </div>
         </aside>
         <!-- Center library -->
-        <main class="app__library__contents">
+        <main class="app__library__contents u--relative">
           <!-- Topbar upgrade -->
-          <div class="app__library__contents__topbar">
+          <div class="app__library__contents__topbar u--flex">
             <span><a href="#">effettua l&apos;upgrade</a></span>
           </div>
-          <ul>
+          <ul class="u--flex">
             <li><a href="#">in evidenza</a></li>
             <li><a href="#">podcast</a></li>
             <li><a href="#">classifiche</a></li>
@@ -44,6 +44,16 @@
             <li><a href="#">nuove uscite</a></li>
             <li><a href="#">scopri</a></li>
           </ul>
+          <div class="app__library__contents__albums u--flex">
+            <h2>Recently played</h2>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <div class="app__library__contents__albums_item u--relative"><a href="#"><img src="assets/img/metal_lifting.jpg" alt=""></a></div>
+            <h2>Created for Marco Silvestri</h2>
+          </div>
         </main>
       </div>
       <!-- Player -->
