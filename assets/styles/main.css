@@ -14,6 +14,8 @@ body {
 a {
   text-decoration: none;
   color: #FFF;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -41,7 +43,7 @@ a:hover {
 .app__library__sidebar {
   display: flex;
   flex-direction: column;
-  flex-basis: 240px;
+  justify-content: space-between;
 }
 
 /* Playlist */
@@ -49,6 +51,31 @@ a:hover {
 .app__library__sidebar__playlist {
   background: #111;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.app__library__sidebar__playlist a {
+  display: block;
+  width: 30px;
+  margin: 5px 10px;
+}
+
+.app__library__sidebar__playlist a,
+.app__library__sidebar__account a {
+  display: block;
+  width: 30px;
+  margin: 10px 15px;
+}
+
+.app__library__sidebar__playlist a img {
+  opacity: 0.6;
+  transition: opacity 300ms;
+}
+
+.app__library__sidebar__playlist a img:hover {
+  opacity: 1;
 }
 
 /* Account panel */
@@ -56,6 +83,13 @@ a:hover {
 .app__library__sidebar__account {
   background: #222;
   height: 90px; /* DEBUG: */
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
 }
 
 /* Center library */
@@ -67,6 +101,30 @@ a:hover {
   padding-top: 90px; /* same as app__library__contents__topbar height */
   display: flex;
   overflow-y: auto;
+
+}
+
+.app__library__contents ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.app__library__contents ul li {
+  list-style: none;
+  margin: 0 15px auto;
+}
+
+.app__library__contents ul li a{
+  text-transform: uppercase;
+  margin: 0 15px auto;
+  border-bottom: 3px solid transparent;
+}
+
+.app__library__contents ul li a:hover{
+  border-bottom: 3px solid #93c639;
+  width: 10px;
 }
 
 /* Topbar upgrade */
@@ -88,8 +146,6 @@ a:hover {
   border-radius: 25px;
   padding: 10px 15px;
   margin: 15px;
-  text-transform: uppercase;
-  font-size: 10px;
   font-weight: 700;
 }
 
@@ -102,4 +158,16 @@ a:hover {
 .player {
   height: 90px; /* DEBUG: */
   background: #555;
+}
+
+@media (min-width: 601px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
