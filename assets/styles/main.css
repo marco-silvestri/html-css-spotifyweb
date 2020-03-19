@@ -40,6 +40,27 @@
   border-radius: 50%;
 }
 
+.u--list-inline {
+  display: inline-block;
+  list-style: none;
+}
+
+.min-w-601{
+  display: none;
+}
+
+.u--space-bottom {
+  margin-bottom: 10px;
+}
+
+.u--space-left {
+  padding-left: 20px;
+}
+
+.icon--size {
+  font-size: 50px;
+}
+
 /* Typography*/
 
 body {
@@ -86,40 +107,53 @@ a:hover {
 .app__library__sidebar__playlist {
   background: #111;
   flex-grow: 1;
-}
-
-.app__library__sidebar__playlist a {
-  display: block;
-  width: 30px;
-  margin: 5px 10px;
-}
-
-.app__library__sidebar a{
-  display: block;
-  width: 30px;
-  margin: 10px 15px;
-  z-index: 1;
+  padding-right: 20px;
 }
 
 .app__library__sidebar__playlist a img {
-  opacity: 0.6;
-  transition: opacity 300ms;
+  height: 45px;
+  margin: 5px 0px;
 }
 
-.app__library__sidebar__playlist a img:hover {
+.app__library__sidebar__playlist__menu-item img,
+.app__library__sidebar a{
+  width: 20px;
+  margin: 10px 15px;
+}
+
+.app__library__sidebar__playlist__menu-item {
+  border-left: 4px solid transparent;
+  opacity: .8;
+  transition: border .2s;
+  transition: opacity .2s;
+}
+
+.app__library__sidebar__playlist__menu-item:hover {
+  border-left: 4px solid lime;
   opacity: 1;
+}
+
+.app__library__sidebar__playlist__menu-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.app__library__sidebar__playlist__hideable {
+  display: none;
 }
 
 /* Account panel */
 
 .app__library__sidebar__account {
   background: #222;
-  height: 90px; /* DEBUG: */
 }
 
 .app__library__sidebar__account__img--circle {
   background-color: #555;
   border-radius: 50%;
+  max-height: 30px;
+  max-width: 30px;
 }
 
 .content__wrapper {
@@ -227,28 +261,62 @@ a:hover {
   height: 50px;
 }
 
-.lenght__bar {
+.bar {
   background: #111;
-  width: 100px;
   height: 4px;
   align-self: center;
   margin: 0 10px;
+}
+
+.lenght__bar {
+  width: 100px;
 }
 
 .output__bar {
-  background: #111;
   width: 50px;
-  height: 4px;
-  margin: 0 10px;
-  align-self: center;
 }
 
+.output__bar::before,
+.lenght__bar::before {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 27%;
+  background: #999;
+}
+
+.output__bar:hover::after,
+.lenght__bar:hover::after {
+  content: " ";
+  position: absolute;
+  left: 27%; /* Same as pseudoelement's width */
+  transform: translateY(-30%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #999;
+}
 
 @media (min-width: 601px) {
+  .min-w-601{
+    display: inline-block;
+  }
 
+  .max-w-600{
+    display: none;
+  }
+
+  .app__library__sidebar__playlist {
+    padding-right: 150px;
+  }
+
+  .app__library__sidebar__playlist__hideable {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
+
   .app__library__contents__albums__item {
     flex-basis: calc(100% / 4);
   }
@@ -262,9 +330,14 @@ a:hover {
   .lenght__bar {
     width: 300px;
   }
+
+  .output__bar {
+    width: 100px;
+  }
 }
 
 @media (min-width: 992px) {
+
   .app__library__contents__albums > h2,
   .app__library__contents__albums > h4 {
     margin-left: 1.5%;
@@ -275,7 +348,11 @@ a:hover {
   }
 
   .lenght__bar {
-    width: 300px;
+    width: 400px;
+  }
+
+  .output__bar {
+    width: 200px;
   }
 }
 

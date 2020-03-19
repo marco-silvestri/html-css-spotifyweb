@@ -20,24 +20,80 @@
         <aside class="app__library__sidebar u--flex u--column u--sp-between">
           <!-- Playlist -->
           <div class="app__library__sidebar__playlist u--flex u--column">
-            <a href="#"><img src="assets/img/logo-small.svg" alt=""></a>
-            <a href="#"><img src="assets/img/home.svg" alt=""></a>
-            <a href="#"><img src="assets/img/search.svg" alt=""></a>
-            <a href="#"><img src="assets/img/libreria.svg" alt=""></a>
+            <div class="u--space-bottom">
+              <a href="#">
+                <img class="max-w-600" src="assets/img/logo-small.svg" alt="">
+                <img class="min-w-601" src="assets/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="app__library__sidebar__playlist__menu-item">
+              <img src="assets/img/home.svg" alt="">
+              <div class="min-w-601">
+                  <span class="min-w-601">Home</span>
+                </div>
+            </div>
+            <div class="app__library__sidebar__playlist__menu-item">
+              <img src="assets/img/search.svg" alt="">
+              <div class="min-w-601">
+                  <span class="min-w-601">Cerca</span>
+                </div>
+            </div>
+            <div class="app__library__sidebar__playlist__menu-item u--space-bottom">
+              <img src="assets/img/libreria.svg" alt="">
+              <div class="min-w-601">
+                  <span class="min-w-601">La tua libreria</span>
+                </div>
+            </div>
+            <div class="app__library__sidebar__playlist__hideable">
+              <h3 class="u--space-left">Playlist</h3>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <i class="icon--size fas fa-plus-square"></i><span>Crea playlist</span>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+                <div class="">
+                    <span>Nome Playlist</span>
+                  </div>
+              </div>
+            </div>
           </div>
           <!-- Account panel -->
-          <div class="app__library__sidebar__account">
+          <div class="app__library__sidebar__account u--flex u--column u--sp-around">
+            <i class="u--space-left far fa-arrow-alt-circle-down"></i>
             <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
           </div>
         </aside>
           <div class="content__wrapper u--relative">
+            <!-- Topbar upgrade -->
             <div class="app__library__contents__topbar u--flex">
               <span><a href="#">effettua l&apos;upgrade</a></span>
             </div>
+            <!-- Center library -->
             <main class="app__library__contents">
-              <!-- Topbar upgrade -->
-
-
               <ul class="u--flex">
                 <li><a href="#">in evidenza</a></li>
                 <li><a href="#">podcast</a></li>
@@ -107,11 +163,10 @@
               </div>
             </main>
           </div>
-        <!-- Center library -->
-
       </div>
       <!-- Player -->
       <footer class="app__player u--flex u--sp-between">
+        <!-- Now Listening -->
         <div class="app__player__current u--flex">
           <img class="app__player__current__thumbnail" src="assets/img/sinister.jpeg" alt="">
           <div>
@@ -123,6 +178,7 @@
             <h3><i class="far fa-folder"></i></h3>
           </div>
         </div>
+        <!-- Main Controls -->
         <div class="app__player__actions">
           <div class="app__player__actions__btn-wrapper">
             <i class="fas fa-random"></i>
@@ -131,23 +187,24 @@
             <i class="fas fa-step-forward"></i>
             <i class="fas fa-redo-alt"></i>
           </div>
+          <!-- Song navigation -->
           <div class="app__player__actions__lenght u--flex">
             <span class="lenght__number">
               0:25
             </span>
-            <div class="lenght__bar u--relative u--it-center">
-
+            <div class="bar lenght__bar u--relative u--it-center">
             </div>
             <span class="lenght_number">
               4:35
             </span>
           </div>
         </div>
+        <!-- Output controls -->
         <div class="app__player__output u--flex u--it-center">
           <i class="fas fa-list"></i>
           <i class="fas fa-desktop"></i>
           <i class="fas fa-volume-up"></i>
-          <div class="output__bar u--relative">
+          <div class="bar output__bar u--relative">
           </div>
         </div>
       </footer>
