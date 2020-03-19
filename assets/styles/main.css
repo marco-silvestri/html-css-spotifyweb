@@ -196,11 +196,12 @@ a:hover {
   flex-basis: calc(100% / 2);
   text-align: center;
   margin-top: 20px;
-  padding: 0 20px;
 }
 
 .app__library__contents__albums__item img{
   display: block;
+  margin: auto;
+  max-width: 80%;
 }
 
 .app__library__contents__albums > h2 {
@@ -211,14 +212,37 @@ a:hover {
 .app__library__contents__albums > h2,
 .app__library__contents__albums > h4 {
   flex-basis: 90%;
+  margin-left: 5%;
 }
 
 /* Player */
 
-.player {
-  height: 90px; /* DEBUG: */
+.app__player {
+  padding: 20px 10px;
   background: #555;
 }
+
+.app__player__current__thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.lenght__bar {
+  background: #111;
+  width: 100px;
+  height: 4px;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.output__bar {
+  background: #111;
+  width: 50px;
+  height: 4px;
+  margin: 0 10px;
+  align-self: center;
+}
+
 
 @media (min-width: 601px) {
 
@@ -232,16 +256,26 @@ a:hover {
   .app__library__contents__albums > h2,
   .app__library__contents__albums > h4 {
     flex-basis: 95%;
+    margin-left: 2%;
+  }
+
+  .lenght__bar {
+    width: 300px;
   }
 }
 
 @media (min-width: 992px) {
   .app__library__contents__albums > h2,
   .app__library__contents__albums > h4 {
+    margin-left: 1.5%;
   }
 
   .app__library__contents__albums__item {
     flex-basis: calc(100% / 6);
+  }
+
+  .lenght__bar {
+    width: 300px;
   }
 }
 
