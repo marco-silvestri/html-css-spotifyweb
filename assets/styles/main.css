@@ -251,6 +251,21 @@ a:hover {
   margin-top: 20px;
 }
 
+.app__library__contents__albums__item a:hover::before{
+  position: absolute;
+  transform: translate(-50%, 30%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  font-size: 92px;
+  color: #FFF;
+}
+
+.app__library__contents__albums__item a:hover,
+.app__library__contents__albums__item img:hover{
+  opacity: .5;
+}
+
 .app__library__contents__albums__item img{
   display: block;
   margin: auto;
