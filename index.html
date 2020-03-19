@@ -45,36 +45,36 @@
                 </div>
             </div>
             <div class="app__library__sidebar__playlist__hideable">
-              <h3 class="u--space-left">Playlist</h3>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <h3 class="u--space-left u--space-tb">Playlist</h3>
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <i class="icon--size fas fa-plus-square"></i><span>Crea playlist</span>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
               </div>
-              <div class="app__library__sidebar__playlist__menu-item u--space-left">
+              <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
                 <div class="">
                     <span>Nome Playlist</span>
                   </div>
@@ -82,9 +82,18 @@
             </div>
           </div>
           <!-- Account panel -->
-          <div class="app__library__sidebar__account u--flex u--column u--sp-around">
-            <i class="u--space-left far fa-arrow-alt-circle-down"></i>
-            <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
+          <div class="app__library__sidebar__account u--flex u--column">
+            <div class="u--space-tb app__library__sidebar__playlist__menu-item u--flex">
+              <i class="far fa-arrow-alt-circle-down"></i><span class="app__library__sidebar__playlist__hideable">Installa app</span>
+            </div>
+            <div class="u--space-tb u--flex">
+              <div class="app__library__sidebar__account__bar ">
+              </div>
+            </div>
+            <div class="u--space-tb app__library__sidebar__playlist__menu-item u--flex">
+              <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
+              <span class="u--space-left app__library__sidebar__playlist__hideable">John Doe</span>
+            </div>
           </div>
         </aside>
           <div class="content__wrapper u--relative">
@@ -95,12 +104,12 @@
             <!-- Center library -->
             <main class="app__library__contents">
               <ul class="u--flex">
-                <li><a href="#">in evidenza</a></li>
-                <li><a href="#">podcast</a></li>
-                <li><a href="#">classifiche</a></li>
-                <li><a href="#">generi e mood</a></li>
-                <li><a href="#">nuove uscite</a></li>
-                <li><a href="#">scopri</a></li>
+                <li class="u--relative"><a href="#">in evidenza</a></li>
+                <li class="u--relative"><a href="#">podcast</a></li>
+                <li class="u--relative"><a href="#">classifiche</a></li>
+                <li class="u--relative"><a href="#">generi e mood</a></li>
+                <li class="u--relative"><a href="#">nuove uscite</a></li>
+                <li class="u--relative"><a href="#">scopri</a></li>
               </ul>
               <!-- Recently played wrapper -->
               <div class="app__library__contents__albums u--flex">
@@ -167,14 +176,16 @@
       <!-- Player -->
       <footer class="app__player u--flex u--sp-between">
         <!-- Now Listening -->
-        <div class="app__player__current u--flex">
-          <img class="app__player__current__thumbnail" src="assets/img/sinister.jpeg" alt="">
-          <div>
+        <div class="app__player__current u--flex u--it-center">
+          <div class="">
+            <img class="app__player__current__thumbnail u--space-right" src="assets/img/sinister.jpeg" alt="">
+          </div>
+          <div class="u--space-right">
             <h3>Sinister</h3>
             <h4>Brano Nome</h4>
           </div>
-          <div>
-            <h3><i class="far fa-heart"></i></h3>
+          <div class="u--flex">
+            <h3 class="u--space-right"><i class="far fa-heart"></i></h3>
             <h3><i class="far fa-folder"></i></h3>
           </div>
         </div>
@@ -200,10 +211,16 @@
           </div>
         </div>
         <!-- Output controls -->
-        <div class="app__player__output u--flex u--it-center">
-          <i class="fas fa-list"></i>
-          <i class="fas fa-desktop"></i>
-          <i class="fas fa-volume-up"></i>
+        <div class="app__player__output u--flex u--it-center u--sp-between">
+          <div class="u--space-right">
+            <i class="fas fa-list"></i>
+          </div>
+          <div class="u--space-right">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="u--space-right">
+            <i class="fas fa-volume-up"></i>
+          </div>
           <div class="bar output__bar u--relative">
           </div>
         </div>

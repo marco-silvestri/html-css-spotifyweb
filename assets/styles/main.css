@@ -45,6 +45,11 @@
   list-style: none;
 }
 
+.u--space-tb {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .min-w-601{
   display: none;
 }
@@ -57,8 +62,12 @@
   padding-left: 20px;
 }
 
+.u--space-right {
+  margin-right: 20px;
+}
+
 .icon--size {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* Typography*/
@@ -104,10 +113,10 @@ a:hover {
 
 /* Playlist */
 
+.app__library__sidebar__account,
 .app__library__sidebar__playlist {
-  background: #111;
+  background: #000;
   flex-grow: 1;
-  padding-right: 20px;
 }
 
 .app__library__sidebar__playlist a img {
@@ -115,6 +124,7 @@ a:hover {
   margin: 5px 0px;
 }
 
+.far.fa-arrow-alt-circle-down,
 .app__library__sidebar__playlist__menu-item img,
 .app__library__sidebar a{
   width: 20px;
@@ -129,14 +139,13 @@ a:hover {
 }
 
 .app__library__sidebar__playlist__menu-item:hover {
-  border-left: 4px solid lime;
+  border-left: 4px solid #8ff76f;
   opacity: 1;
 }
 
 .app__library__sidebar__playlist__menu-item {
   display: flex;
   align-items: center;
-
 }
 
 .app__library__sidebar__playlist__hideable {
@@ -145,15 +154,18 @@ a:hover {
 
 /* Account panel */
 
-.app__library__sidebar__account {
-  background: #222;
-}
-
 .app__library__sidebar__account__img--circle {
   background-color: #555;
   border-radius: 50%;
   max-height: 30px;
   max-width: 30px;
+}
+
+.app__library__sidebar__account__bar {
+  background: #FFF;
+  height: 2px;
+  width: 80%;
+  margin: auto;
 }
 
 .content__wrapper {
@@ -163,12 +175,13 @@ a:hover {
 /* Center library */
 
 .app__library__contents {
-  background: #333;
+  background: #141921;
   position: absolute;
   height: 100%;
   flex-grow: 1;
   padding-top: 90px; /* same as app__library__contents__topbar height */
   overflow-y: auto;
+  scroll-snap-type: y mandatory; /* smooth scrolling trough the h2 */
 }
 
 .app__library__contents ul {
@@ -188,9 +201,15 @@ a:hover {
   border-bottom: 3px solid transparent;
 }
 
-.app__library__contents ul li a:hover{
-  border-bottom: 3px solid #93c639;
-  width: 10px;
+.app__library__contents ul li a:hover::after {
+  position: absolute;
+  content: " ";
+  background: #8ff76f;
+  width: 35%;
+  margin: auto;
+  height: 3px;
+  bottom: -5px;
+  left: 35%;
 }
 
 /* Topbar upgrade */
@@ -200,7 +219,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(rgba(22, 255, 0, .5),rgba(22, 255, 0, .2));
+  background: rgba(8, 11, 17, 0.6);
   justify-content: flex-end;
   align-items: center;
   z-index: 1;
@@ -241,6 +260,7 @@ a:hover {
 .app__library__contents__albums > h2 {
   margin-top: 10px;
   margin-bottom: 10px;
+  scroll-snap-align: center;
 }
 
 .app__library__contents__albums > h2,
@@ -253,7 +273,7 @@ a:hover {
 
 .app__player {
   padding: 20px 10px;
-  background: #555;
+  background: #272727;
 }
 
 .app__player__current__thumbnail {
@@ -262,7 +282,7 @@ a:hover {
 }
 
 .bar {
-  background: #111;
+  background: #535353;
   height: 4px;
   align-self: center;
   margin: 0 10px;
@@ -282,7 +302,7 @@ a:hover {
   position: absolute;
   height: 4px;
   width: 27%;
-  background: #999;
+  background: #bababa;
 }
 
 .output__bar:hover::after,
@@ -294,7 +314,21 @@ a:hover {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #999;
+  background: #8ff76f;
+}
+
+.output__bar:hover::before,
+.lenght__bar:hover::before {
+  background: #8ff76f;
+}
+
+.app__player__current {
+  justify-content: space-around;
+}
+
+.app__player__actions__btn-wrapper{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 601px) {
@@ -304,10 +338,6 @@ a:hover {
 
   .max-w-600{
     display: none;
-  }
-
-  .app__library__sidebar__playlist {
-    padding-right: 150px;
   }
 
   .app__library__sidebar__playlist__hideable {
