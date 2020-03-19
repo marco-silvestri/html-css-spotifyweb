@@ -98,6 +98,7 @@ a:hover {
   display: block;
   width: 30px;
   margin: 10px 15px;
+  z-index: 1;
 }
 
 .app__library__sidebar__playlist a img {
@@ -121,10 +122,16 @@ a:hover {
   border-radius: 50%;
 }
 
+.content__wrapper {
+  flex-grow: 1;
+}
+
 /* Center library */
 
 .app__library__contents {
   background: #333;
+  position: absolute;
+  height: 100%;
   flex-grow: 1;
   padding-top: 90px; /* same as app__library__contents__topbar height */
   overflow-y: auto;
@@ -162,6 +169,7 @@ a:hover {
   background-image: linear-gradient(rgba(22, 255, 0, .5),rgba(22, 255, 0, .2));
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 
 .app__library__contents__topbar a {
@@ -188,10 +196,11 @@ a:hover {
   flex-basis: calc(100% / 2);
   text-align: center;
   margin-top: 20px;
+  padding: 0 20px;
 }
 
 .app__library__contents__albums__item img{
-  max-width: 80%;
+  display: block;
 }
 
 .app__library__contents__albums > h2 {
@@ -202,7 +211,6 @@ a:hover {
 .app__library__contents__albums > h2,
 .app__library__contents__albums > h4 {
   flex-basis: 90%;
-  margin-left: 5%;
 }
 
 /* Player */
@@ -224,14 +232,12 @@ a:hover {
   .app__library__contents__albums > h2,
   .app__library__contents__albums > h4 {
     flex-basis: 95%;
-    margin-left: 2%;
   }
 }
 
 @media (min-width: 992px) {
   .app__library__contents__albums > h2,
   .app__library__contents__albums > h4 {
-    margin-left: 1.5%;
   }
 
   .app__library__contents__albums__item {

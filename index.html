@@ -15,7 +15,7 @@
     <!-- MAIN WRAPPER -->
     <div class="app u--flex u--column">
       <!-- Side + Center wrapper -->
-      <div class="app__library u--flex">
+      <div class="app__library u--flex u--relative">
         <!-- Sidebar  -->
         <aside class="app__library__sidebar u--flex u--column u--sp-between">
           <!-- Playlist -->
@@ -30,80 +30,85 @@
             <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
           </div>
         </aside>
+          <div class="content__wrapper u--relative">
+            <div class="app__library__contents__topbar u--flex">
+              <span><a href="#">effettua l&apos;upgrade</a></span>
+            </div>
+            <main class="app__library__contents">
+              <!-- Topbar upgrade -->
+
+
+              <ul class="u--flex">
+                <li><a href="#">in evidenza</a></li>
+                <li><a href="#">podcast</a></li>
+                <li><a href="#">classifiche</a></li>
+                <li><a href="#">generi e mood</a></li>
+                <li><a href="#">nuove uscite</a></li>
+                <li><a href="#">scopri</a></li>
+              </ul>
+              <!-- Recently played wrapper -->
+              <div class="app__library__contents__albums u--flex">
+                <h2>Recently played</h2>
+                <!-- Album card with IMG, TITLE and SUBTITLE -->
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/metal_lifting.jpg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Heavy Metal</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/stranger.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Kyle Dixon & Micheal Stein</h4>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/aquietplace.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">A quiet place</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/split.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Split</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/cure.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">A cure for wellness</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/sinister.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Sinister</h3>
+                  <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
+                </article>
+              </div>
+              <div class="app__library__contents__albums u--flex">
+                <h2>Creato per John Doe</h2>
+                <h4>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/radar.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Release Radar</h3>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img src="assets/img/mixdaily.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Daily Mix 1</h3>
+                </article>
+              </div>
+              <div class="app__library__contents__albums u--flex">
+                <h2>Artisti pi&ugrave; popolari</h2>
+                <h4>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
+                <article class="app__library__contents__albums__item">
+                  <img class="u--round" src="assets/img/young.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Lana del Rey</h3>
+                </article>
+                <article class="app__library__contents__albums__item">
+                  <img class="u--round" src="assets/img/einaudi.jpeg" alt="">
+                  <h3 class="app__library__contents__albums__item_title">Ludovico Einaudi</h3>
+                </article>
+              </div>
+            </main>
+          </div>
         <!-- Center library -->
-        <main class="app__library__contents u--relative">
-          <!-- Topbar upgrade -->
-          <div class="app__library__contents__topbar u--flex">
-            <span><a href="#">effettua l&apos;upgrade</a></span>
-          </div>
-          <ul class="u--flex">
-            <li><a href="#">in evidenza</a></li>
-            <li><a href="#">podcast</a></li>
-            <li><a href="#">classifiche</a></li>
-            <li><a href="#">generi e mood</a></li>
-            <li><a href="#">nuove uscite</a></li>
-            <li><a href="#">scopri</a></li>
-          </ul>
-          <!-- Recently played wrapper -->
-          <div class="app__library__contents__albums u--flex">
-            <h2>Recently played</h2>
-            <!-- Album card with IMG, TITLE and SUBTITLE -->
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/metal_lifting.jpg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Heavy Metal</h3>
-              <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/stranger.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-              <h4 class="app__library__contents__albums__subtitle">Kyle Dixon & Micheal Stein</h4>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/aquietplace.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">A quiet place</h3>
-              <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/split.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Split</h3>
-              <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/cure.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">A cure for wellness</h3>
-              <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/sinister.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Sinister</h3>
-              <h4 class="app__library__contents__albums__subtitle">Subtitle</h4>
-            </article>
-          </div>
-          <div class="app__library__contents__albums u--flex">
-            <h2>Creato per John Doe</h2>
-            <h4>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/radar.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Release Radar</h3>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img src="assets/img/mixdaily.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Daily Mix 1</h3>
-            </article>
-          </div>
-          <div class="app__library__contents__albums u--flex">
-            <h2>Artisti pi&ugrave; popolari</h2>
-            <h4>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h4>
-            <article class="app__library__contents__albums__item">
-              <img class="u--round" src="assets/img/young.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Lana del Rey</h3>
-            </article>
-            <article class="app__library__contents__albums__item">
-              <img class="u--round" src="assets/img/einaudi.jpeg" alt="">
-              <h3 class="app__library__contents__albums__item_title">Ludovico Einaudi</h3>
-            </article>
-          </div>
-        </main>
+
       </div>
       <!-- Player -->
       <footer class="player">
