@@ -269,7 +269,7 @@ a:hover {
 
 .app__library__contents__albums__item a:hover::before{
   position: absolute;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 40%);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f144";
@@ -279,13 +279,15 @@ a:hover {
 
 .app__library__contents__albums__item a:hover,
 .app__library__contents__albums__item img:hover{
-  opacity: .5;
+  opacity: .1;
 }
 
 .app__library__contents__albums__item img{
   display: block;
   margin: auto;
   max-width: 80%;
+  margin-bottom: 10px;
+  transition: opacity .2s;
 }
 
 .app__library__contents__albums > h2 {
@@ -380,72 +382,4 @@ a:hover {
 
 .app__player__actions__btn-wrapper.output-btn i {
   padding-right: 10px;
-}
-
-@media (min-width: 601px) {
-  .min-w-601{
-    display: inline-block;
-  }
-
-  .max-w-600{
-    display: none;
-  }
-
-  .app__library__sidebar__playlist__hideable {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .app__library__contents__albums__item {
-    flex-basis: calc(100% / 4);
-  }
-
-  .app__library__contents__albums > h2,
-  .app__library__contents__albums > h4 {
-    flex-basis: 95%;
-    margin-left: 2%;
-  }
-
-  .lenght__bar {
-    width: 300px;
-  }
-
-  .output__bar {
-    width: 100px;
-  }
-
-  .player__collection i,
-  .app__player__actions__btn-wrapper i {
-    font-size: 20px;
-
-  }
-
-  .app__player__actions__btn-wrapper i:nth-child(3) {
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 992px) {
-
-  .app__library__contents__albums > h2,
-  .app__library__contents__albums > h4 {
-    margin-left: 1.5%;
-  }
-
-  .app__library__contents__albums__item {
-    flex-basis: calc(100% / 6);
-  }
-
-  .lenght__bar {
-    width: 400px;
-  }
-
-  .output__bar {
-    width: 150px;
-  }
-}
-
-@media (min-width: 1200px) {
 }
