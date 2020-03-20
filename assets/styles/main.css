@@ -362,6 +362,7 @@ a:hover {
   justify-content: space-evenly;
 }
 
+.player__collection i,
 .app__player__actions__btn-wrapper i {
   font-size: 12px;
   opacity: .6;
@@ -372,6 +373,7 @@ a:hover {
   font-size: 22px;
 }
 
+.player__collection i:hover,
 .app__player__actions__btn-wrapper i:hover {
    opacity: 1;
 }
@@ -414,6 +416,7 @@ a:hover {
     width: 100px;
   }
 
+  .player__collection i,
   .app__player__actions__btn-wrapper i {
     font-size: 20px;
 
