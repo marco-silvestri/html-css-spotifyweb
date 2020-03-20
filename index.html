@@ -15,7 +15,7 @@
     <!-- MAIN WRAPPER -->
     <div class="app u--flex u--column">
       <!-- Side + Center wrapper -->
-      <div class="app__library u--flex u--relative">
+      <div class="app__library u--flex">
         <!-- Sidebar  -->
         <aside class="app__library__sidebar u--flex u--column u--sp-between">
           <!-- Playlist -->
@@ -28,88 +28,70 @@
             </div>
             <div class="app__library__sidebar__playlist__menu-item">
               <img src="assets/img/home.svg" alt="">
-              <div class="min-w-601">
-                  <span class="min-w-601">Home</span>
-                </div>
+              <a href="#" class="min-w-601">Home</a>
             </div>
             <div class="app__library__sidebar__playlist__menu-item">
               <img src="assets/img/search.svg" alt="">
-              <div class="min-w-601">
-                  <span class="min-w-601">Cerca</span>
-                </div>
+              <a href="#" class="min-w-601">Cerca</a>
             </div>
             <div class="app__library__sidebar__playlist__menu-item u--space-bottom">
               <img src="assets/img/libreria.svg" alt="">
-              <div class="min-w-601">
-                  <span class="min-w-601">La tua libreria</span>
-                </div>
+              <a href="#" class="min-w-601">La tua libreria</a>
             </div>
             <div class="app__library__sidebar__playlist__hideable">
               <h3 class="u--space-left u--space-tb">Playlist</h3>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <i class="icon--size fas fa-plus-square"></i><span>Crea playlist</span>
+                <i class="icon--size fas fa-plus-square"></i><a href="#">Crea playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
               <div class="u--space-tb app__library__sidebar__playlist__menu-item u--space-left">
-                <div class="">
-                    <span>Nome Playlist</span>
-                  </div>
+                <a href="#">Nome Playlist</a>
               </div>
             </div>
           </div>
           <!-- Account panel -->
           <div class="app__library__sidebar__account u--flex u--column">
-            <div class="u--space-tb app__library__sidebar__playlist__menu-item u--flex">
-              <i class="far fa-arrow-alt-circle-down"></i><span class="app__library__sidebar__playlist__hideable">Installa app</span>
+            <div class="u--flex u--it-center u--sp--evenly">
+              <i class="far fa-arrow-alt-circle-down"></i>
+              <a class="app__library__sidebar__playlist__hideable" href="#">Installa app</a>
             </div>
-            <div class="u--space-tb u--flex">
-              <div class="app__library__sidebar__account__bar ">
-              </div>
+            <div class="app__library__sidebar__account__bar app__library__sidebar__playlist__hideable">
             </div>
-            <div class="u--space-tb app__library__sidebar__playlist__menu-item u--flex">
-              <a href="#"><img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt=""></a>
-              <span class="u--space-left app__library__sidebar__playlist__hideable">John Doe</span>
+            <div class="u--flex u--it-center u--sp--evenly">
+              <img class="app__library__sidebar__account__img--circle" src="assets/img/profile.svg" alt="">
+              <a class="app__library__sidebar__playlist__hideable" href="#">John Doe</a>
             </div>
           </div>
         </aside>
+          <!-- Central wrapper -->
           <div class="content__wrapper u--relative">
             <!-- Topbar upgrade -->
             <div class="app__library__contents__topbar u--flex">
-              <span><a href="#">effettua l&apos;upgrade</a></span>
+              <span><a class="u--uppercase" href="#">effettua l&apos;upgrade</a></span>
             </div>
             <!-- Center library -->
             <main class="app__library__contents">
               <ul class="u--flex">
-                <li class="u--relative"><a href="#">in evidenza</a></li>
-                <li class="u--relative"><a href="#">podcast</a></li>
-                <li class="u--relative"><a href="#">classifiche</a></li>
-                <li class="u--relative"><a href="#">generi e mood</a></li>
-                <li class="u--relative"><a href="#">nuove uscite</a></li>
-                <li class="u--relative"><a href="#">scopri</a></li>
+                <li class="u--relative u--uppercase"><a href="#">in evidenza</a></li>
+                <li class="u--relative u--uppercase"><a href="#">podcast</a></li>
+                <li class="u--relative u--uppercase"><a href="#">classifiche</a></li>
+                <li class="u--relative u--uppercase"><a href="#">generi e mood</a></li>
+                <li class="u--relative u--uppercase"><a href="#">nuove uscite</a></li>
+                <li class="u--relative u--uppercase"><a href="#">scopri</a></li>
               </ul>
               <!-- Recently played wrapper -->
               <div class="app__library__contents__albums u--flex">
