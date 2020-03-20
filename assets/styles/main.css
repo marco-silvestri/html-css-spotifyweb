@@ -74,6 +74,10 @@
   text-transform: uppercase;
 }
 
+.u--nowrap {
+  flex-wrap: nowrap;
+}
+
 .icon--size {
   font-size: 40px;
 }
@@ -95,10 +99,12 @@ a:hover {
   color: #555;
 }
 
+.app__player h3,
 .app__library__contents__albums__item h3 {
   font-size: 14px;
 }
 
+.app__player h4,
 .app__library__contents__albums h4 {
   font-size: 12px;
   font-weight: 400;
@@ -266,7 +272,7 @@ a:hover {
   transform: translate(-50%, 30%);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f067";
+  content: "\f144";
   font-size: 92px;
   color: #FFF;
 }
@@ -356,6 +362,24 @@ a:hover {
   justify-content: space-evenly;
 }
 
+.app__player__actions__btn-wrapper i {
+  font-size: 12px;
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+.app__player__actions__btn-wrapper i:nth-child(3) {
+  font-size: 22px;
+}
+
+.app__player__actions__btn-wrapper i:hover {
+   opacity: 1;
+}
+
+.app__player__actions__btn-wrapper.output-btn i {
+  padding-right: 10px;
+}
+
 @media (min-width: 601px) {
   .min-w-601{
     display: inline-block;
@@ -389,6 +413,15 @@ a:hover {
   .output__bar {
     width: 100px;
   }
+
+  .app__player__actions__btn-wrapper i {
+    font-size: 20px;
+
+  }
+
+  .app__player__actions__btn-wrapper i:nth-child(3) {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -407,7 +440,7 @@ a:hover {
   }
 
   .output__bar {
-    width: 200px;
+    width: 150px;
   }
 }
 
