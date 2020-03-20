@@ -68,9 +68,8 @@
 
 @media (min-width: 1800px) {
 
-  .app__library__contents__albums__item {
-    flex-basis: auto;
-    max-width: 80%;
+  .app__library__contents {
+    width: 100%;
   }
 
 }
